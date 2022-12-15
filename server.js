@@ -67,6 +67,10 @@ app.post("/send-mail", (req, res) => {
   });
 });
 
-server.listen(process.env.PORT || 3030);
+const port = process.env.PORT || 3030
+app.listen(port,()=>{
+  console.log("Opening a video on port 3030")
+})
+// server.listen(process.env.PORT || 3030);
 
 // mlqsxylyfnulzahx
